@@ -1,0 +1,49 @@
+server --> logic 
+
+controller --> servlet 
+
+what is servlet? --> class 
+
+
+class A extends Thread{
+
+}
+class A implements Runnable{
+
+}
+
+
+class SignupServlet extends HttpServlet{
+
+}
+
+* 
+class SignupServlet implements Servlet{
+
+}
+
+
+HttpServlet ---> .jar --> lib 
+1) tomcat 
+2) net 
+
+--------------------------
+
+
+right click on project --> properties --> java build path ---> libraries -> add external jar --> browse to
+	apache tomcat folder --> lib --> servlet-api.jar open --> order and exports --> select all -->
+	apply and close...
+
+servlet -->
+1) class extends HttpServlet
+2) service - override -- logic 
+3) web.xml --> servlet or annotation
+
+client--user--request
+server---response 
+
+--------------------------
+
+
+
+
