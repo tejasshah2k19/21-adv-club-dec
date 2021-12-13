@@ -43,6 +43,37 @@ client--user--request
 server---response 
 
 --------------------------
+InputData.jsp
+	
+	name 
+	birthyear
+	gender 
+	
+	[submit]
+	
+	Name : UPPERCASE 
+	birthYear : XXXX 
+	Gender : UPPERCASE  
+	
+--------------------------
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
