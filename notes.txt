@@ -45,17 +45,21 @@ server---response
 --------------------------
 InputData.jsp
 	
-	name 
+	name : xyz
 	birthyear
 	gender 
+	hobby : X Y Z E  [checkbox] 
 	
 	[submit]
 	
-	Name : UPPERCASE 
+	Name : XYZ [ name is missing ] 
 	birthYear : XXXX 
 	Gender : UPPERCASE  
+	Hobby  : X,Z 
 	
 --------------------------
+
+
 	
 
 

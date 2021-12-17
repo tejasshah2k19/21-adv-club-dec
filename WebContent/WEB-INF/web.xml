@@ -27,9 +27,71 @@
 		<servlet-name>InputDataServlet</servlet-name>
 		<servlet-class>com.controller.InputDataServlet</servlet-class>
 	</servlet>
-	
+
 	<servlet-mapping>
 		<servlet-name>InputDataServlet</servlet-name>
 		<url-pattern>/InputDataServlet</url-pattern>
 	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>MySignupServlet</servlet-name>
+		<servlet-class>com.controller.MySignupServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MySignupServlet</servlet-name>
+		<url-pattern>/MySignupServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<servlet>
+		<servlet-name>AddServlet</servlet-name>
+		<servlet-class>com.controller.AddServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddServlet</servlet-name>
+		<url-pattern>/AddServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </web-app>
