@@ -59,7 +59,15 @@
 	</servlet-mapping>
 
 
+	<servlet>
+		<servlet-name>CurrencyConvertorServlet</servlet-name>
+		<servlet-class>com.controller.CurrencyConvertorServlet</servlet-class>
+	</servlet>
 
+	<servlet-mapping>
+		<servlet-name>CurrencyConvertorServlet</servlet-name>
+		<url-pattern>/CurrencyConvertorServlet</url-pattern>
+	</servlet-mapping>
 
 
 

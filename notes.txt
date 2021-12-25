@@ -58,6 +58,13 @@ InputData.jsp
 	Hobby  : X,Z 
 	
 --------------------------
+jsp --> java servlet pages / java server pages  ==> [ html + java ] 
+
+
+java logic --> scriptlet  <% %> 
+java print --> expression <%= %> 
+
+bydefault html content 
 
 
 	
