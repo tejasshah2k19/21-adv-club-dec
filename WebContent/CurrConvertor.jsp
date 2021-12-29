@@ -30,7 +30,7 @@
 
 		} else {
 			amount = (Integer) request.getAttribute("amount");//Object 
-			out.print(amount);
+			out.print(amount);//PrintWriter 
 		}
 	%>
 

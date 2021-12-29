@@ -68,9 +68,39 @@ bydefault html content
 
 
 	
+------------------------------
+
+
+String email = request.getParameter("email");
+
+if( email.endsWith("@gmail.com")   || email.endsWith("@ymail.com")) {
+
+
+}
+
+
+XXX@XXX.XXX	-->	regex 
+
+String -->
+
+x@x.com 
+
+1) length >= 6
+2) @   >= 1st index 
+3) .   >= 4th index 
+
+
+mail server --> smtp --> 
+
+email send api --> google 
+
+send otp to their email --> 
+
+tejas@ygmail.com --> send an otp --> mail --> 
 
 
 
+------------------------------
 
 
 
