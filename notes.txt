@@ -166,6 +166,59 @@ Sita XX 42345 6000
 cookie --> storage --> client [user ] ---> browser --> 
 
 
+------------------------------------------------------------
+
+filter --> 
+
+	pre processing 
+	
+whatsapp --> 
+	
+	x -- > 25 mb image -->  y
+	
+	
+	x -->  whatsapp server ---> y 
+	25 --> upload -->server ---> download ---> y
+	50 server 
+	
+	x    compress image--> upload---> whatsapp server---> download y  [10mb] compress version 
+	 
+	
+
+
+icici.com
+	pakistan ---> 
+	
+	login 
+			username
+			password 
+						submit 
+						
+						
+	icici - server -->      filter ip -> white list  country  |    username/password -> authenticate  --> home | login error 
+	
+
+
+
+facebook.com 
+
+	profile --->  52 mb --->    compress  server --> profile [ ] -->
+	
+
+--------how to implement filter? 
+
+1) implements Filter interface 
+2) init doFilter destroy  
+3) web.xml -->  mapping 
+
+
+
+filter-> ? validation = > 
+
+
+
+
+
 
 
 

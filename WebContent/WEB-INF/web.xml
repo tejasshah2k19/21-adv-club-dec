@@ -71,12 +71,28 @@
 
 
 
+	<servlet>
+		<servlet-name>FindAgeSerlvet</servlet-name>
+		<servlet-class>com.controller.FindAgeSerlvet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>FindAgeSerlvet</servlet-name>
+		<url-pattern>/FindAgeSerlvet</url-pattern>
+	</servlet-mapping>
 
 
 
+	<filter>
+		<filter-name>AgeValidationFilter</filter-name>
+		<filter-class>com.filter.AgeValidationFilter</filter-class>
+	</filter>
 
-
-
+	<filter-mapping>
+		<filter-name>AgeValidationFilter</filter-name>
+		<url-pattern>/FindAgeSerlvet</url-pattern>
+		<!-- <servlet-name>FindAgeSerlvet</servlet-name> -->
+	</filter-mapping>
 
 
 
