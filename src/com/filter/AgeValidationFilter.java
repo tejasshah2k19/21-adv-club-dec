@@ -52,7 +52,7 @@ public class AgeValidationFilter implements Filter {
 		} else {
 
 			// go ahead
-			chain.doFilter(request, response);// go ahead
+			chain.doFilter(request, response);// go ahead - servlet | filter 
 		}
 	}
 

@@ -9,6 +9,8 @@
 <body>
 
 <form action="FindAgeSerlvet">
+	
+	Name : <input type="text" name="name">${nameError} <br><br>
 	Birth Year : <input type="text" name="byear"> ${error} <br><br>
 	<input type="submit" value="Find My Age"/> 
 </form>

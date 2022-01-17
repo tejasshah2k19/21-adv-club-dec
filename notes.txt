@@ -215,11 +215,16 @@ facebook.com
 
 filter-> ? validation = > 
 
+------------------------------------------------
+
+can we have multiple filter for 1 -- servlet  --yes 
+
+
+Age
 
 
 
-
-
+------------------------------------------------
 
 
 

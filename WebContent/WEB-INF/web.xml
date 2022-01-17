@@ -95,6 +95,15 @@
 	</filter-mapping>
 
 
+	<filter>
+		<filter-name>NameValidationFilter</filter-name>
+		<filter-class>com.filter.NameValidationFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>NameValidationFilter</filter-name>
+		<url-pattern>/FindAgeSerlvet</url-pattern>
+	</filter-mapping>
 
 
 
