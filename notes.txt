@@ -225,17 +225,29 @@ Age
 
 
 ------------------------------------------------
+user data store -->
+
+				cookie ---  client side -- browser 
+				session --- server side -- server's memory 
+				Cookie c = new Cookie();
+				HttpSession ==> new ==> only server 
+				
+login <-session-> logout 
 
 
+user --> abc.com --> server --> login.jsp ---> session new 
+		 abc.com/abc --> server --> abc.jsp --> session ?
+
+		user1					user2						user3 
+	abc.com [session]			abc.com/abc[session] 
+	abc.com/abc 
 
 
+------------------------------------------------
 
-
-
-
-
-
-
+user1			user2			user3
+ronak			tejas			aish
+friend aish 
 
 
 
