@@ -23,6 +23,8 @@ public class SessionLoginServlet extends HttpServlet {
 		session.setAttribute("email", email);
 		session.setAttribute("password", password);
 
+		session.setMaxInactiveInterval(180);//seconds -- 2minutes 
+		
 		RequestDispatcher rd = request.getRequestDispatcher("SessionHome.jsp");
 		rd.forward(request, response);
 

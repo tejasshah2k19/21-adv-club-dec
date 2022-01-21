@@ -250,12 +250,30 @@ ronak			tejas			aish
 friend aish 
 
 
+HttpSession session= request.getSession();
+
+session.setAttribute("key",value); 
+
+session.getAttribute("key")
+ 
+------------------------------------------------
+
+to destroy session 	we can use 
+	session.invalidate(); 
+
+we can destroy using 
+		1) programmatically	
+			1.1) session.invalidate()
+			1.2) setMaxInactivInterval() 
+		2)	xml - configuration 
+				session-timeout 
+
+session time out ?
+	1) prog. setMaxInactiveInterval()
+	2) xml - session-timeout 
 
 
-
-
-
-
+------------------------------------------------
 
 
 
