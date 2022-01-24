@@ -275,14 +275,111 @@ session time out ?
 
 ------------------------------------------------
 
+amazon --> 
+
+servlet / jsp / filter / session / cookie / collections / bean / validation 
+bootstrap or css /   
+
+
+1) name -> number 
+2) email -> xx@xx.xxx 
+3) email unique 
+4) required  
+
+
+Signup : [ firstname ,email ,password ]  [ customer ] 
+Login  : [ email , password ]  
+
+admin never signup* [ you need to add  1 static admin ] 
+
+
+we have two types of user in our app 
+1) admin
+2) customer 
+
+admin can manage product , manager orders , manage users. 
+manage -> add update delete list 
+
+admin -> Login 
+
+AdminDashboard.jsp 
+
+List Users |   List Products | List Orders 
+
+Add Product -->    productName , price , qty 
+Add user -> add Customer 
+
+iphone
+laptop
+watch
+
+
+Customer 
+
+Login.jsp 
+			email | password 
+			
+CustomerHome.jsp
+
+Welcome  Ram , 
+
+link -> View Cart, View Orders 
+
+
+iphone			laptop			watch 
+1,39,000	    85000			25000
+[addtocart]    [addtocart]     [addtocart]	
+
+
+*customer add iphone and laptop using addtocart 
+
+view cart -> click -->		
+	iphone  1,39,000
+	laptip	  85000
+	-------------------
+			2,24,000
+			
+	[ checkout ]		
 
 
 
 
+------------------------------------------------
+
+amazon --> 
+facebook --> 
+500 online 
+ 
+server stop --> mail --> 
+
+server start --> nse.com connection establish 
+server shutdown --> nse.com connection disconnect 
+
+j2ee -> listener --> listen activities --> events --> 
 
 
+session create 
+session destroy 
+server start 
+server shutdown 
+abc.com --> 500 pay --> payment gateway --> passive 
+request --> set get remove 
+
+j2ee --> listener interface -> 
+
+ 
+1) class implements listener --> 
+2) override methods 
+3) mapping into web.xml 
 
 
+total count --> online -->
+			userCounter=0 
+		session create --> userCounter ++ 
+		session destroy --> userCounter -- 
+		
+		
+------------------------------------------------
 
 
 
