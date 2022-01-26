@@ -381,7 +381,76 @@ total count --> online -->
 		
 ------------------------------------------------
 
+database --> query -->   sql  --> console 
 
+web - application --> user ---> console 
+
+	Signup.jsp 
+	Login.jsp 
+	
+java --> database 
+
+jdbc 
+
+drivers --> help --> connection --> query 
+java.sql.*;
+
+
+vendor-> lib jar --> 
+#driver# --> 
+	java ? how to connect with database? 
+	
+	oracle -> 
+	pg  -> 
+	mysql -> 
+	mongodb  -> lib 
+	
+
+type 1 -- native -- odbc ->single [computer dbconnection]
+type 2 --- native---multi 
+type 3 ---- pure java ---- load ---use 
+type 4#  ---pure java --- use 
+
+
+mysql --->
+	driver --> mysql-connector 
+	
+	DbConnection 
+			-> connection 
+			
+	
+create database decclubadv;
+
+use decclubadv;
+	
+show tables;
+
+create table users (
+	userId integer primary key auto_increment,
+	firstName varchar(30),
+	email varchar(30),
+	password varchar(30) 
+);
+
+
+M [ bean dao ] 
+V [ jsp ] 
+C  [ servlets ] 
+
+------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 
