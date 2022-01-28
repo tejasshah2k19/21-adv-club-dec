@@ -437,6 +437,28 @@ M [ bean dao ]
 V [ jsp ] 
 C  [ servlets ] 
 
+
+
+		//Statement 
+		
+		//PreparedStatement --> preCompile 
+		
+		//CallableStatement  -- store procedure , function , views --> PL/SQL 
+		
+		
+		executeUpdate() => insert , delete , update  
+		
+		executeQuert() => select 
+		
+insert into users (firstName,email,password) values ('ram','ram@gmai.com','ram123');
+
+compile 
+eval -> parser ->  
+optimiZer
+execution 
+ 
+
+
 ------------------------------------------------------------
 
 

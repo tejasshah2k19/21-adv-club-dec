@@ -29,6 +29,7 @@ public class DbSignupServlet extends HttpServlet {
 		UserDao userDao = new UserDao();
 		userDao.insertUser(userBean);
 
+		response.sendRedirect("DbHome.jsp");// old request -- new request
 		// home
 
 	}
