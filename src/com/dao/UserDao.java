@@ -2,12 +2,44 @@ package com.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import com.bean.UserBean;
 import com.util.DbConnection;
 
 public class UserDao {
+
+	public ArrayList<UserBean> getAllUsers() {
+
+		Connection con = null;
+		PreparedStatement stmt = null;
+		ArrayList<UserBean> users = new ArrayList<>();
+		try {
+			con = DbConnection.openConnection();
+			stmt = con.prepareStatement("select * from users");
+
+			ResultSet rs = stmt.executeQuery();// db
+
+			// rs.next(); // boolean -> true | false
+			while (rs.next()) {
+
+				UserBean userBean = new UserBean();
+
+				userBean.setUserId(rs.getInt("userId"));
+				userBean.setEmail(rs.getString("email"));
+				userBean.setPassword(rs.getString("password"));
+				userBean.setFirstName(rs.getString("firstName"));
+
+				users.add(userBean);
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return users;
+	}
 
 	public void insertUser(UserBean userBean) {
 		// connection open

@@ -8,6 +8,7 @@
 <body>
 
 
-	DbHome
+	DbHome <br><br>
+	<a href="DbListUsersServlet">List All Users</a>
 </body>
 </html>
