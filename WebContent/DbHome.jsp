@@ -9,6 +9,14 @@
 
 
 	DbHome <br><br>
+
+
 	<a href="DbListUsersServlet">List All Users</a>
+<br><br>
+	<a href="DbSignup.jsp">Add Users</a>
+<br><br>
+	<a href="DbSearchUser.jsp">Search</a>
+
 </body>
-</html>
+
+</html>     

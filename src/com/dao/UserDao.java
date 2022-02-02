@@ -26,12 +26,10 @@ public class UserDao {
 			while (rs.next()) {
 
 				UserBean userBean = new UserBean();
-
 				userBean.setUserId(rs.getInt("userId"));
 				userBean.setEmail(rs.getString("email"));
 				userBean.setPassword(rs.getString("password"));
 				userBean.setFirstName(rs.getString("firstName"));
-
 				users.add(userBean);
 			}
 
@@ -41,6 +39,35 @@ public class UserDao {
 		return users;
 	}
 
+	
+	public ArrayList<UserBean> searchUserByName(String searchName) {
+
+		Connection con = null;
+		PreparedStatement stmt = null;
+		ArrayList<UserBean> users = new ArrayList<>();
+		try {
+			con = DbConnection.openConnection();
+			stmt = con.prepareStatement("select * from users where firstName like ?");
+			stmt.setString(1, searchName+"%");
+			ResultSet rs = stmt.executeQuery();// db
+
+			// rs.next(); // boolean -> true | false
+			while (rs.next()) {
+
+				UserBean userBean = new UserBean();
+				userBean.setUserId(rs.getInt("userId"));
+				userBean.setEmail(rs.getString("email"));
+				userBean.setPassword(rs.getString("password"));
+				userBean.setFirstName(rs.getString("firstName"));
+				users.add(userBean);
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return users;
+	}
+	
 	public void insertUser(UserBean userBean) {
 		// connection open
 		// query
@@ -74,4 +101,23 @@ public class UserDao {
 		}
 
 	}
+
+	public void deleteUser(int userId) {
+
+		try {
+			Connection con = DbConnection.openConnection();
+			PreparedStatement pstmt = con.prepareStatement("delete from users where userId = ?");
+			pstmt.setInt(1, userId);
+
+			int records = pstmt.executeUpdate();//
+			System.out.println(records + " record(s) delete.....");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+
+	
+
 }
