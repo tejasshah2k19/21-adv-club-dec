@@ -25,5 +25,5 @@ public class DbSearchUserServlet extends HttpServlet {
 		
 		request.getRequestDispatcher("SearchList.jsp").forward(request, response);
 	}
-
+       
 }

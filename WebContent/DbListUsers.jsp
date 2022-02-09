@@ -36,7 +36,11 @@
 			<td><%=user.getFirstName()%></td>
 			<td><%=user.getEmail()%></td>
 			<td><%=user.getPassword()%></td>
-			<tD><a href="DeleteUserServlet?userId=<%=user.getUserId()%>"> Delete</a></tD>
+			<tD><a href="DeleteUserServlet?userId=<%=user.getUserId()%>"> Delete</a>|
+			
+				<a  href="EditUserSerlvet?userId=<%=user.getUserId()%>">Edit</a>
+			
+			</tD>
 		</tr>
 
 		<%

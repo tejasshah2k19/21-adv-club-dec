@@ -98,4 +98,52 @@
     <servlet-name>DbSearchUserServlet</servlet-name>
     <url-pattern>/DbSearchUserServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MyServlet</display-name>
+    <servlet-name>MyServlet</servlet-name>
+    <servlet-class>com.controller.MyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyServlet</servlet-name>
+    <url-pattern>/MyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.controller.LoginServlet</servlet-class>
+    <init-param>
+      <param-name>email</param-name>
+      <param-value>admin@gmail.com</param-value>
+    </init-param>
+    <init-param>
+      <param-name>password</param-name>
+      <param-value>admin</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditUserSerlvet</display-name>
+    <servlet-name>EditUserSerlvet</servlet-name>
+    <servlet-class>com.controller.DbEditUserSerlvet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditUserSerlvet</servlet-name>
+    <url-pattern>/EditUserSerlvet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DbUpdateUserServlet</display-name>
+    <servlet-name>DbUpdateUserServlet</servlet-name>
+    <servlet-class>com.controller.DbUpdateUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DbUpdateUserServlet</servlet-name>
+    <url-pattern>/DbUpdateUserServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

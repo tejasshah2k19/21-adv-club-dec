@@ -460,6 +460,91 @@ execution
 
 
 ------------------------------------------------------------
+server start 
+
+	-> MyServlet ---->	class memory? 
+	
+			load class 
+			create instance 
+			init() // init(SerlvetConfig) 
+			service() 
+
+
+	second request --> MyServlet 
+			class memory? 
+				service()
+				
+				
+	third request --> service()
+	
+	nth request -->			class memory? 
+							service()
+	
+	server -->shut down --> release 
+		destroy() --> release --> init() 
+	
+	
+	
+					
+
+
+			load class 
+			create instance 
+			init() // no aws open 
+			service() 
+			destroy() // no aws close 
+
+
+
+if i make request of login servlet 500 time then how many time 
+init-----1
+service --------500
+destroy ---------0
+and main method call -----0 
+? 
+
+--------------------------------------------------------------------------------------------------------------------------
+Filter life cycle 
+
+	init()-----------1 ----server start .....
+	doFilter()----------- nTime
+	destroy() ------1 ---server shut down....
+	
+--------------------------------------------------------------------------------------------------------------------------
+
+servlet-->LoginServlet 
+
+		email / password ---> servlet fix --> 
+
+--------------------------------------------------------------------------------------------------------------------------
+_____Connection________ interface is used to hold database  connection object ? 
+
+
+
+_PreparedStatement_____ interface is used to execute sql query in database? 
+
+
+
+_executeQuery()_______ method is used to execute read only query ? 
+
+
+
+__SQLException_________ exception is thrown by jdbc api ? 
+
+
+_____executeUpdate()_________ method is used to execute insert update delete query ? 
+
+
+
+___ResultSet__ is known as cursor in database ? 
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
 
 
 

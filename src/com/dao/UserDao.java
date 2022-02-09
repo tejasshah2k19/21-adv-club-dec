@@ -39,7 +39,6 @@ public class UserDao {
 		return users;
 	}
 
-	
 	public ArrayList<UserBean> searchUserByName(String searchName) {
 
 		Connection con = null;
@@ -48,7 +47,7 @@ public class UserDao {
 		try {
 			con = DbConnection.openConnection();
 			stmt = con.prepareStatement("select * from users where firstName like ?");
-			stmt.setString(1, searchName+"%");
+			stmt.setString(1, searchName + "%");
 			ResultSet rs = stmt.executeQuery();// db
 
 			// rs.next(); // boolean -> true | false
@@ -67,7 +66,7 @@ public class UserDao {
 		}
 		return users;
 	}
-	
+
 	public void insertUser(UserBean userBean) {
 		// connection open
 		// query
@@ -117,7 +116,51 @@ public class UserDao {
 		}
 	}
 
+	public UserBean getUserDetailById(int userId) {
+		Connection con = null;
+		PreparedStatement stmt = null;
+		UserBean user = null;
+		try {
+			con = DbConnection.openConnection();
+			stmt = con.prepareStatement("select * from users where userId = ? ");
+			stmt.setInt(1, userId);
 
-	
+			ResultSet rs = stmt.executeQuery();// db
+
+			// rs.next(); // boolean -> true | false
+			if (rs.next()) {
+
+				user = new UserBean();
+				user.setUserId(rs.getInt("userId"));
+				user.setEmail(rs.getString("email"));
+				user.setFirstName(rs.getString("firstName"));
+
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return user;
+	}
+
+	public void updateUser(UserBean user) {
+
+		try {
+			Connection con = DbConnection.openConnection();
+			PreparedStatement pstmt = con.prepareStatement("update  users set firstName = ? , email = ?  where userId = ?");
+			pstmt.setInt(3, user.getUserId());
+			pstmt.setString(1, user.getFirstName());
+			pstmt.setString(2, user.getEmail());
+			
+			
+
+			int records = pstmt.executeUpdate();//
+			System.out.println(records + " record(s) updated....");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
 }
