@@ -540,11 +540,43 @@ ___ResultSet__ is known as cursor in database ?
 
 --------------------------------------------------------------------------------------------------------------------------
 
+Project Management :- 
 
+idea -> submit 
 
+		title : expense manager 
+		description : [ text , url ] 
+		technology : 
+		author : 
+		company : 
+		
 
+users -> idea search 
+			MEAN 
+			
+users -> 
+project -> 
+bid -> 
 
+			Dashboard 
+			
+			Add Idea  [ Manage CRUD ] 
+			View My Projects 
+			Search Ideas 
+			My Bids
+			
+			 
+data dictionary :-
 
+users 
+	userId , firstName ,email,password 
+project 
+	projectId , title , description , technology , userId[FK] , company , isBid
+bid 
+	userId , projectId  ,amount , status 
+	 
+			
+--------------------------------------------------------------------------------------------------------------------------
 
 
 

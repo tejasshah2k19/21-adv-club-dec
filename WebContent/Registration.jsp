@@ -2,42 +2,102 @@
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Registration</title>
+
+<!-- ================= Favicon ================== -->
+<!-- Standard -->
+<link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
+<!-- Retina iPad Touch Icon-->
+<link rel="apple-touch-icon" sizes="144x144"
+	href="http://placehold.it/144.png/000/fff">
+<!-- Retina iPhone Touch Icon-->
+<link rel="apple-touch-icon" sizes="114x114"
+	href="http://placehold.it/114.png/000/fff">
+<!-- Standard iPad Touch Icon-->
+<link rel="apple-touch-icon" sizes="72x72"
+	href="http://placehold.it/72.png/000/fff">
+<!-- Standard iPhone Touch Icon-->
+<link rel="apple-touch-icon" sizes="57x57"
+	href="http://placehold.it/57.png/000/fff">
+
+<!-- Styles -->
+<link href="assets/css/lib/font-awesome.min.css" rel="stylesheet">
+<link href="assets/css/lib/themify-icons.css" rel="stylesheet">
+<link href="assets/css/lib/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/lib/helper.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body>
-	<form action="RegisterServlet" method="post">
-
-		FirstName : <input type="text" name="firstName"
-			value="${firstNameValue}" /> ${firstNameError} <BR> Email : <input
-			type="text" name="email" value="${emailValue}" /> ${emailError } <br>
-
-		Password : <input type="password" name="password" /><br>
-		ConfirmPassword : <input type="password" name="confirmPassword" /><br>
-
-		Gender : Male <input type="radio" name="gender" value="male" />
-		Female <input type="radio" name="gender" value="female" /> <br>
-
-		City : <select name="city">
-			<option value="-1" > ---Select City----</option>
-			<option value="ahd"  <%= request.getAttribute("cityValue")!= null && request.getAttribute("cityValue").equals("ahd")?"selected=selected":"" %>    >Ahmedabad</option>
-			<option value="baroda"  <%= request.getAttribute("cityValue")!= null && request.getAttribute("cityValue").equals("baroda")?"selected=selected":"" %> >Baroda</option>
-			<option value="ad"  <%= request.getAttribute("cityValue")!= null && request.getAttribute("cityValue").equals("ad")?"selected=selected":"" %> >Anand</option>
-
-		</select> 
-		${cityError }
-		<br> <input type="submit" value="Register" />
-	</form>
 
 
-	<script>
-		function save() {
 
-			document.getElementById("formId").submit();
-		}
-	</script>
 
+<body class="bg-primary">
+
+	<div class="unix-login">
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="login-content">
+						<div class="login-logo">
+							<a href="index.html"><span>Focus</span></a>
+						</div>
+						<div class="login-form">
+							<h4>Register to Administration</h4>
+							<form action="RegistrationServlet" method="post">
+								<div class="form-group">
+									<label>FirstName</label> <input type="text"
+										class="form-control" name="firstName" placeholder="FirstName">
+								</div>
+								<div class="form-group">
+									<label>Email address</label> <input type="email"
+										class="form-control" name="email" placeholder="Email">
+								</div>
+								<div class="form-group">
+									<label>Password</label> <input type="password"
+										class="form-control" name="password" placeholder="Password">
+								</div>
+
+								<div class="form-group">
+									<label>Male</label> <input type="radio" name="gender"
+										value="male" /> <label>Female</label> <input type="radio"
+										name="gender" value="female" />
+								</div>
+ 
+ 
+								<button type="submit"
+									class="btn btn-primary btn-flat m-b-30 m-t-30">Register</button>
+<!-- 								<div class="social-login-content">
+									<div class="social-button">
+										<button type="button"
+											class="btn btn-primary bg-facebook btn-flat btn-addon m-b-10">
+											<i class="ti-facebook"></i>Register with facebook
+										</button>
+										<button type="button"
+											class="btn btn-primary bg-twitter btn-flat btn-addon m-t-10">
+											<i class="ti-twitter"></i>Register with twitter
+										</button>
+									</div>
+								</div>
+ -->								<div class="register-link m-t-15 text-center">
+									<p>
+										Already have account ? <a href="#"> Sign in</a>
+									</p>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </body>
+
+
 </html>
