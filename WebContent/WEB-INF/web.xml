@@ -146,4 +146,25 @@
     <servlet-name>DbUpdateUserServlet</servlet-name>
     <url-pattern>/DbUpdateUserServlet</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ConfigLoginServlet</servlet-name>
+  	<servlet-class>com.controller.ConfigLoginServlet</servlet-class>
+ 
+ 	<init-param>
+ 		<param-name>email</param-name>
+ 		<param-value>admin@gmail.com</param-value>
+ 	</init-param>
+ 	<init-param>
+ 		<param-name>password</param-name>
+ 		<param-value>admin</param-value>
+ 	</init-param>
+ 
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ConfigLoginServlet</servlet-name>
+  	<url-pattern>/ConfigLoginServlet</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
