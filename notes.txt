@@ -579,15 +579,40 @@ bid
 --------------------------------------------------------------------------------------------------------------------------
 
 
+servlet config -- specific to single servlet 
+
+	<init-param>
+ 		<param-name>email</param-name>
+ 		<param-value>admin@gmail.com</param-value>
+ 	</init-param>
+
+	ServletConfig 
 
 
 
 
+we need to fetch value from any servlet 
+
+ServletContext ==> application ==> all servlet 
 
 
 
 
+--------------------------------------------------------------------------------------------------------------------------
+jsp -> servlet
 
+servlet container --> web container --> server --> tomcat 
+
+.jsp -->
+	1) translation  -> .jsp => .java [  jspInit , _jspService , jspDestroy  ] 
+	2) compilation -> .java => .class 
+	3) load class 
+	4) create instance 
+	5) init 
+	6) service [ jsp content ] 
+	7) destroy 
+	 
+ _ under score ==> this mehtod is not override by  you 
 
  
 

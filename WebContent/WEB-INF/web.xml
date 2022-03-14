@@ -167,4 +167,17 @@
   	<url-pattern>/ConfigLoginServlet</url-pattern>
   </servlet-mapping>
   
+  
+  <context-param>
+ 	<param-name>gEmail</param-name>
+ 	<param-value>global@gmail.com</param-value> 
+  </context-param>
+  
+  
+  <context-param>
+  	<param-name>gPassword</param-name>
+	<param-value>password123</param-value>
+  </context-param>
+  
+  
 </web-app>
