@@ -616,6 +616,67 @@ servlet container --> web container --> server --> tomcat
 
  
 
+-----------------------------------------------------
+
+jsp 
+
+		if  <% if %>   ${ }
+		
+			<%= %> 
+			
+			<%  %> 
+			
+			<% %>  
+
+
+<b> 
+<i> 
+
+<if> <foreach> <out> 
+
+1) core** 
+2) sql 
+3) format 
+4) xml 
+
+
+1) 
+jar -> jstl-1.2.jar  8.5
+
+2) jsp -> import -> use 
+
+-----------------------------------------------------
+developer | user 
+customtag :- 
+
+	we have two category in custom tag 
+	1) SimpleTag  [ SimpleTag , SimpleTagSupport ]  
+	2) ClassicTag [ Tag , BodyTag , IterationTag , TagSupport] 
+	
+link jsp-api.jar in your project from tomcat/lib [ same as servlet-api.jar ] 
+
+
+steps:
+	1)  tag handler class - logic [ extends SimpleTagSupport ]
+	2)  .tld  [ tag information ] [ web-inf]
+	3)  map .tld  into web.xml
+	4)  jsp import - taglib 
+	
+	
+	<greet></greet>  => tag -> no attribute no body content 
+	
+
+	<sqr num="2"></sqr>
+
+	tag - with attribute no body 
+	
+	com->stag-> java ->SqrTag
+
+
+
+
+
+
 
 
 

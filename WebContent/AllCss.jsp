@@ -1,29 +1,20 @@
+   <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sufee Admin - HTML5 Admin Template</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- ================= Favicon ================== -->
-<!-- Standard -->
-<link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
-<!-- Retina iPad Touch Icon-->
-<link rel="apple-touch-icon" sizes="144x144"
-	href="http://placehold.it/144.png/000/fff">
-<!-- Retina iPhone Touch Icon-->
-<link rel="apple-touch-icon" sizes="114x114"
-	href="http://placehold.it/114.png/000/fff">
-<!-- Standard iPad Touch Icon-->
-<link rel="apple-touch-icon" sizes="72x72"
-	href="http://placehold.it/72.png/000/fff">
-<!-- Standard iPhone Touch Icon-->
-<link rel="apple-touch-icon" sizes="57x57"
-	href="http://placehold.it/57.png/000/fff">
-<!-- Styles -->
-<link href="assets/css/lib/calendar2/pignose.calendar.min.css"
-	rel="stylesheet">
-<link href="assets/css/lib/chartist/chartist.min.css" rel="stylesheet">
-<link href="assets/css/lib/font-awesome.min.css" rel="stylesheet">
-<link href="assets/css/lib/themify-icons.css" rel="stylesheet">
-<link href="assets/css/lib/owl.carousel.min.css" rel="stylesheet" />
-<link href="assets/css/lib/owl.theme.default.min.css" rel="stylesheet" />
-<link href="assets/css/lib/weather-icons.css" rel="stylesheet" />
-<link href="assets/css/lib/menubar/sidebar.css" rel="stylesheet">
-<link href="assets/css/lib/bootstrap.min.css" rel="stylesheet">
-<link href="assets/css/lib/helper.css" rel="stylesheet">
-<link href="assets/css/style.css" rel="stylesheet">
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="vendors/selectFX/css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="vendors/jqvmap/dist/jqvmap.min.css">
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
