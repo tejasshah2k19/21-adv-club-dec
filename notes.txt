@@ -674,6 +674,17 @@ steps:
 
 
 
+--------------------------------
+
+classic Tag :- 
+
+1) Tag Handler class
+2) .tld
+3) .xml mapping .tld 
+4) jsp import use 
+ 
+
+
 
 
 
