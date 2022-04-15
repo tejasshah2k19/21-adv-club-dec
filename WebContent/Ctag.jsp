@@ -11,6 +11,9 @@
 	<c:greet></c:greet>
 	<br>
 	jai JwaN Jai KiSan 
-	
+	<br>
+	<c:print count="3">Royal<br></c:print>	
+	<br>
+	<c:mark>RoyAl</c:mark>
 </body>
 </html>

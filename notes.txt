@@ -684,9 +684,18 @@ classic Tag :-
 4) jsp import use 
  
 
+1) tag with no body no attribute
+2) tag with no body with attribute 
+3) tag with body and attribute [ no body modification] 
+<print count="3">Royal</print>
+
+4) tag with body  modification 
+ 
+
+<b>hi</b> 
 
 
-
+<mark>hi</mark> 
 
 
 
